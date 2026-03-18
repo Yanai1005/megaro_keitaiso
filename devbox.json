@@ -2,17 +2,19 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.17.0/.schema/devbox.schema.json",
   "packages": [
     "python@3.12",
-    "uv@latest"
+    "uv@latest",
+    "mecab@latest"
   ],
   "shell": {
     "init_hook": [
-       "uv sync"
+      "export MECABRC=$(mecab-config --sysconfdir)/mecabrc",
+      "uv sync"
     ],
     "scripts": {
-      "dev": "uv run uvicorn main:app --reload --host 0.0.0.0 --port 8000",
+      "dev":   "uv run uvicorn main:app --reload --host 0.0.0.0 --port 8000",
       "start": "uv run uvicorn main:app --host 0.0.0.0 --port 8000",
-      "test": "uv run pytest",
-      "lint": "uv run ruff check ."
+      "test":  "uv run pytest",
+      "lint":  "uv run ruff check ."
     }
   }
 }

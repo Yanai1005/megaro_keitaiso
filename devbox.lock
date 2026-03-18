@@ -5,6 +5,54 @@
       "last_modified": "2026-03-15T17:58:12Z",
       "resolved": "github:NixOS/nixpkgs/a07d4ce6bee67d7c838a8a5796e75dff9caa21ef?lastModified=1773597492"
     },
+    "mecab@latest": {
+      "last_modified": "2026-02-23T15:40:43Z",
+      "resolved": "github:NixOS/nixpkgs/80d901ec0377e19ac3f7bb8c035201e2e098cc97#mecab",
+      "source": "devbox-search",
+      "version": "0.996",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/4jla4h5dhxx6ab3rgifj8h4n2p83xbcc-mecab-0.996",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/4jla4h5dhxx6ab3rgifj8h4n2p83xbcc-mecab-0.996"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/0ja16hf1i26xw20hcrm692cnm7pc50zs-mecab-0.996",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/0ja16hf1i26xw20hcrm692cnm7pc50zs-mecab-0.996"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9c8q1vc0rlipl6qn9zv2gk8m6yqq69ci-mecab-0.996",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9c8q1vc0rlipl6qn9zv2gk8m6yqq69ci-mecab-0.996"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/8ibckda1r2bydbrnmykgll7rwzkjlqg2-mecab-0.996",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/8ibckda1r2bydbrnmykgll7rwzkjlqg2-mecab-0.996"
+        }
+      }
+    },
     "python@3.12": {
       "last_modified": "2026-03-07T23:46:50Z",
       "plugin_version": "0.0.4",
